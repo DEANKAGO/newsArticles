@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% block main %} {% for item in list_of_articles %}
+{% extends "base.html" %} {% block main %}
+<p>{{ sources_str }}</p>
+{% for item in list_of_articles %}
 <div class="container">
   <img src="{{ item.urlToImage }}" alt="{{ item.title}}" />
   <p>author: {{ item.author }}</p>
