@@ -1,7 +1,14 @@
 {% extends "base.html" %} {% block main %} {% for item in list_of_articles %}
-<img src="{{ item.urlToImage }}" alt="{{ item.title}}" />
-<p>author: {{ item.author }}</p>
-<p><a href="{{ item.url}}" target="_blank">title: {{ item.title }}</a></p>
-<p>description: {{ item.description }}</p>
-<hr />
+<div class="container">
+  <img src="{{ item.urlToImage }}" alt="{{ item.title}}" />
+  <p>author: {{ item.author }}</p>
+  <p>description: {{ item.description }}</p>
+  <p>
+    <a class="btn btn-primary" href="{{ item.url}}" target="_blank"
+      >Click to read more</a
+    >
+  </p>
+  <p>Published On: {{ item.publishedAt}}</p>
+  <hr />
+</div>
 {% endfor %} {% endblock main %}
