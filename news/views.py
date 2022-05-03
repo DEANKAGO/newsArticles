@@ -19,11 +19,11 @@ def index():
     list_of_articles = []
     if res.status_code == 200 and res.json()['status'].lower() == "ok":
         list_of_articles = res.json()['articles']
-    list_of_sources = []
-    for i in list_of_articles:
-        list_of_sources.append(i['source']['name'])
-    sources_str = ', '.join(list_of_sources)
-    return render_template('index.html', list_of_articles=list_of_articles, sources_str=sources_str)
+    # list_of_sources = []
+    # for i in list_of_articles:
+    #     list_of_sources.append(i['source']['name'])
+    # sources_str = ', '.join(list_of_sources)
+    return render_template('index.html', list_of_articles=list_of_articles)
 
 
 @app.route('/bbc')
