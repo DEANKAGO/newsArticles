@@ -8,7 +8,7 @@ app = create_app(os.environ.get('FLASK_ENV'))
 NEWS_API_KEY = os.environ.get('API_KEY')
 NEWS_API_BASE_URL = "https://newsapi.org/v2/everything?q=Apple&from=2022-05-03&sortBy=popularity&apiKey=%s" % NEWS_API_KEY
 
-SOURCE_API_BASE_URL = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=%s" % NEWS_API_KEY
+# SOURCE_API_BASE_URL = "https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=%s" % NEWS_API_KEY
 
 REUTERS_API_BASE_URL = "https://newsapi.org/v2/top-headlines?sources=reuters&apiKey=%s" % NEWS_API_KEY
 
