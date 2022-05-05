@@ -9,10 +9,16 @@ class config:
 
 
 class ProdConfig(config):
+    """
+    production class configuration
+    """
     pass
 
 
 class DevConfig(config):
+    """
+    development class configuration
+    """
     DEBUG = True
 
 

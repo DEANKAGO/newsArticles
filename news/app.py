@@ -9,6 +9,6 @@ def create_app(config_name):
     return app
 
 
-# if __name__ == "__main__":
-#     app = create_app(os.environ.get('FLASK_ENV'))
-#     app.run()
+if __name__ == "__main__":
+    app = create_app(os.environ.get('FLASK_ENV'))
+    app.run()
