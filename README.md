@@ -30,6 +30,8 @@
 ## Technology Used
 
 - Python 3.8
+- .html
+- .css
 
 ## Reference
 
